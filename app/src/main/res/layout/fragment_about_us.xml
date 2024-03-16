@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_all"
+    tools:context=".ui.info.AboutUsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="880dp"
+        android:background="@drawable/background_2">
+
+        <vn.edu.greenwich.cw_1_sample.CustomFonts.MediumItalic
+            android:id="@+id/fmAboutUsName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:text="M-Expense"
+            android:textAlignment="center"
+            android:textColor="#190C10"
+            android:textSize="35sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/fmAboutUsLogo"
+            android:layout_width="195dp"
+            android:layout_height="205dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/logo"
+            app:civ_border_color="#78B17A"
+            app:civ_border_width="2dp"
+            app:layout_constraintEnd_toEndOf="@+id/fmAboutUsName"
+            app:layout_constraintStart_toStartOf="@+id/fmAboutUsName"
+            app:layout_constraintTop_toBottomOf="@+id/fmAboutUsName" />
+
+        <vn.edu.greenwich.cw_1_sample.CustomFonts.MediumItalic
+            android:id="@+id/fmAboutUsDescription"
+            android:layout_width="329dp"
+            android:layout_height="112dp"
+            android:layout_marginTop="240dp"
+            android:padding="15dp"
+            android:text="Pham Xuan Vuong Editor"
+            android:textAlignment="center"
+            android:textColor="#190C10"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fmAboutUsName" />
+
+        <vn.edu.greenwich.cw_1_sample.CustomFonts.MediumItalic
+            android:id="@+id/fmAboutUsDescription2"
+            android:layout_width="366dp"
+            android:layout_height="122dp"
+            android:layout_marginTop="84dp"
+            android:padding="15dp"
+            android:text="Email: vuongpxgcs18860@fpt.edu.vn"
+            android:textAlignment="center"
+            android:textColor="#190C10"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.644"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fmAboutUsDescription" />
+
+        <vn.edu.greenwich.cw_1_sample.CustomFonts.MediumItalic
+            android:id="@+id/fmAboutUsDescription3"
+            android:layout_width="329dp"
+            android:layout_height="112dp"
+            android:layout_marginTop="80dp"
+            android:padding="15dp"
+            android:text="Thank for trust !!!"
+            android:textAlignment="center"
+            android:textColor="#190C10"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/fmAboutUsName"
+            app:layout_constraintStart_toStartOf="@id/fmAboutUsName"
+            app:layout_constraintTop_toBottomOf="@+id/fmAboutUsDescription2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
